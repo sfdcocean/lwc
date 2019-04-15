@@ -22,4 +22,4 @@ script:
 - sfdx force:org:display -u ciorg
 - sfdx force:source:push -u ciorg
 - sfdx force:apex:test:run -u ciorg --wait 10
-- sfdx force:org:delete -u ciorg -p
+- sfdx force:mdapi:deploy -d mdapi_output_dir/ -u "learnpiku@lwc.com"
